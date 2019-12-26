@@ -16,7 +16,7 @@ getNasaData().then(result => {
   let link = document.querySelector("#buttonUrl");
   if ((result.media_type = "image")) {
     media.innerHTML = `<img class="nasa_img img-responsive img-fluid" src=${result.url} alt="" srcset="">`;
-    link.innerHTML = `<a class="btn btn-outline-light" href="${result.url}" target="_blank">Link to Source</a>`;
+    link.innerHTML = `<a class="btn btn-outline-light font-weight-bold" href="${result.url}" target="_blank">Link to Source</a>`;
   } else {
     media.innerHTML = `<iframe src="${result.url}" frameborder="0"></iframe>`;
   }
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
         if ((r.media_type = "image")) {
           media.innerHTML = `<img class="nasa_img img-responsive img-fluid" src=${r.url} alt="" srcset="">`;
-          link.innerHTML = `<a class="btn btn-outline-light" href="${r.url}" target="_blank">Link to Source</a>`;
+          link.innerHTML = `<a class="btn btn-outline-light font-weight-bold" href="${r.url}" target="_blank">Link to Source</a>`;
         } else {
           media.innerHTML = `<iframe src="${r.url}" frameborder="0"></iframe>`;
         }
