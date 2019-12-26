@@ -71,7 +71,7 @@ body {
 }
 
 .nasa_img {
-  border: 10px solid white !important;
+  border: 10px solid rgb(10, 0, 0) !important;
   height: 550px;
   width: 550px;
 }
