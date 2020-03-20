@@ -24,8 +24,7 @@ getNasaData().then(result => {
   info.innerHTML = result.explanation;
   title.innerHTML = result.title;
   date.innerHTML = result.date;
-  console.log(result);
-});
+  });
 
 //****** CUSTOM SEARCH WRITTEN IN JQUERY WILL UPDATE IN FUTURE TO BE VANILLA**********/
 
@@ -43,8 +42,7 @@ $(document).ready(function() {
       url: apiURL,
 
       success: function(r) {
-        console.log(r);
-
+        
         /********* VANILLA JS BELOW **********/
         let date = document.querySelector(".nasa_date");
         let title = document.querySelector(".nasa_title");
