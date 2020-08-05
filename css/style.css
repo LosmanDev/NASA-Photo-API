@@ -79,11 +79,12 @@ body {
 .custom_font {
   color: white;
   font-family: "Noto Sans KR", sans-serif;
+  font-weight: bolder;
 }
 
 .nasa_info {
   background-color: rgba(0, 0, 0, 0.979);
-  /* font-stretch: expanded; */
+  border-radius: 10px;
 }
 
 .text-bg {
